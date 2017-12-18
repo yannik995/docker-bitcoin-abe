@@ -23,9 +23,6 @@ Then just point your browser to http://dockerhost:49001
 
 ***Note to Mac or Windows Users**: `dockerhost` is typically `192.168.59.103`, but this can change based on your Oracle VirtualBox settings. You can always check for the IP address by running  `docker-machine ip` from the command line on Mac or Windows.*
 
-You should see some magic like this:
-
-![Bitcoin-Abe Running Locally](http://i132.photobucket.com/albums/q8/c0achmcguirk/Bitcoin-Abe_zpsmsm3gfxe.png)
 
 ## FAQ
 
