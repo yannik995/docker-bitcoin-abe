@@ -12,7 +12,7 @@ When you have docker running just run the command like this:
 
  ```shell
 $ docker run -d --name abe -P -p 49001:80 \
-    -v <PATH_TO_YOUR_BITCOIN_DIR>:/datadir poliver/bitcoin-abe
+    -v <PATH_TO_YOUR_BITCOIN_DIR>:/datadir yannik95/docker-bitcoin-abe
 ```
 
 *This image includes `EXPOSE 80`, so we can remap a port (in the example above `49001`) in the docker host to port `80` in the container.*
@@ -43,7 +43,7 @@ Then just point your browser to http://dockerhost:49001
     ```shell
     # On a Mac.
     $ docker run -d --name abe -P -p 49001:80 \
-        -v ~/localnet/regtest:/datadir poliver/bitcoin-abe
+        -v ~/localnet/regtest:/datadir yannik95/docker-bitcoin-abe
     ```
 
 3. Point your browser at http://dockerhost:49001
@@ -63,15 +63,15 @@ Then just point your browser to http://dockerhost:49001
     # on a Mac
     docker run -d --name abe -P -p 49001:80 \
         -v ~/Library/Application Support/Bitcoin:/datadir \
-        poliver/bitcoin-abe
-
+        yannik95/docker-bitcoin-abe
+   
     # on Linux
     sudo docker run -d --name abe -P -p 49001:80 -v \
-        ~/.bitcoin:/datadir poliver/bitcoin-abe
+        ~/.bitcoin:/datadir yannik95/docker-bitcoin-abe
 
     # on Windows
     docker run -d --name abe -P -p 49001:80 -v \
-        %AppData%/Bitcoin:/datadir poliver/bitcoin-abe
+        %AppData%/Bitcoin:/datadir yannik95/docker-bitcoin-abe
     ```
  
 3. Point your browser at http://dockerhost:49001
