@@ -4,9 +4,9 @@
 # sure you lock down to a specific version, not to `latest`!
 # See https://github.com/phusion/baseimage-docker/blob/master/Changelog.md for
 # a list of version numbers.
-FROM phusion/baseimage:0.9.18
-MAINTAINER Paul Oliver <docker@paultastic.com>
-ENV REFRESHED_AT 20160629
+FROM phusion/baseimage
+MAINTAINER Yannik Eichel <docker@yannikeichel.de>
+ENV REFRESHED_AT 20171218
 
 # Use baseimage-docker's init system.
 CMD ["/sbin/my_init"]
@@ -28,7 +28,7 @@ ADD ./bitcoinabe.abe.py.patch /home/bitcoin-abe/abe.py.patch
 RUN patch -p1 < abe.py.patch
 RUN python setup.py install
 
-ADD ./sqlite.conf /home/bitcoin-abe/
+ADD ./db.conf /home/bitcoin-abe/
 ADD ./run.server.sh /home/bitcoin-abe/
 
 RUN chmod 755 /home/bitcoin-abe run.server.sh

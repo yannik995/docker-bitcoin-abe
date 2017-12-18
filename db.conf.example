@@ -1,0 +1,32 @@
+
+# PostgreSQL example; see also README-POSTGRES.txt:
+#dbtype = psycopg2
+#connect-args = { "database": "abe" }
+
+# MySQL example; see also README-MYSQL.txt:
+#dbtype MySQLdb
+#connect-args {"host":"localhost","user":"abe","db":"abe","passwd":"abe"}
+
+# SQLite3 example; see also README-SQLITE.txt:
+#dbtype = sqlite3
+#connect-args = abe.sqlite
+
+# Oracle example:
+#dbtype=cx_Oracle
+#connect-args=user/pass@SID
+
+# ODBC examples.  Don't use the same schema via ODBC and non-ODBC!
+#dbtype = pyodbc
+#connect-args = DSN=Abe;PWD=B!tc0iN;
+#connect-args = DRIVER={ORACLE};DB=ORCL;UID=abe;PWD=Bitcoin;
+#connect-args = DRIVER={PostgreSQL ANSI};Database=abe;
+
+
+
+upgrade
+
+#HTTP Port
+port 80
+
+#Data Dir
+datadir = /datadir

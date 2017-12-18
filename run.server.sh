@@ -1,7 +1,7 @@
 #!/bin/sh
 
-# initial setup of sqlite
-python -m Abe.abe --config sqlite.conf --commit-bytes 100000 --no-serve
+# initial setup of db
+python -m Abe.abe --config db.conf --commit-bytes 100000 --no-serve
 
 # serve it up
-python -m Abe.abe --config sqlite.conf
+python -m Abe.abe --config db.conf
