@@ -1,3 +1,4 @@
+#!/bin/sh
 # testnet docker image
 
 # Use phusion/baseimage as base image. To make your builds reproducible, make
